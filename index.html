@@ -4,13 +4,49 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Weather App</title>
-
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>My Weather App</h1>
-  <p>Welcome! Check the weather in your city.</p>
+  <div class="app-container">
+    <header>
+      <h1>🌦️ Weather App</h1>
+      <input type="text" id="search" placeholder="Enter city name..." />
+      <button id="search-btn">Search</button>
+    </header>
 
-  <script src="script.js"></script>
+    <section class="current-weather">
+      <h2>Current Weather</h2>
+      <div class="weather-info">
+        <div class="temp">--°C</div>
+        <div class="details">
+          <p>Condition: --</p>
+          <p>Humidity: --%</p>
+          <p>Wind: -- km/h</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="forecast">
+      <h2>Forecast (Next 3 Days)</h2>
+      <div class="forecast-cards">
+        <div class="card">
+          <p>Day 1</p>
+          <p>--°C</p>
+        </div>
+        <div class="card">
+          <p>Day 2</p>
+          <p>--°C</p>
+        </div>
+        <div class="card">
+          <p>Day 3</p>
+          <p>--°C</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>📍 Location: <span id="location">--</span></p>
+    </footer>
+  </div>
 </body>
 </html>
