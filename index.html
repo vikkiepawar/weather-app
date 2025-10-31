@@ -7,46 +7,22 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="app-container">
-    <header>
-      <h1>🌦️ Weather App</h1>
-      <input type="text" id="search" placeholder="Enter city name..." />
-      <button id="search-btn">Search</button>
-    </header>
+  <div class="weather-container">
+    <h1>Weather App</h1>
 
-    <section class="current-weather">
-      <h2>Current Weather</h2>
-      <div class="weather-info">
-        <div class="temp">--°C</div>
-        <div class="details">
-          <p>Condition: --</p>
-          <p>Humidity: --%</p>
-          <p>Wind: -- km/h</p>
-        </div>
-      </div>
-    </section>
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name">
+      <button onclick="getWeatherData()">Get Weather</button>
+    </div>
 
-    <section class="forecast">
-      <h2>Forecast (Next 3 Days)</h2>
-      <div class="forecast-cards">
-        <div class="card">
-          <p>Day 1</p>
-          <p>--°C</p>
-        </div>
-        <div class="card">
-          <p>Day 2</p>
-          <p>--°C</p>
-        </div>
-        <div class="card">
-          <p>Day 3</p>
-          <p>--°C</p>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <p>📍 Location: <span id="location">--</span></p>
-    </footer>
+    <div id="weatherResult" class="weather-result">
+      <h2 id="cityName"></h2>
+      <p id="temperature"></p>
+      <p id="humidity"></p>
+      <p id="condition"></p>
+    </div>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
