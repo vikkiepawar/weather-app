@@ -1,18 +1,25 @@
-.message {
+.app-container {
   text-align: center;
-  font-size: 1.1rem;
-  color: #444;
-  margin-top: 10px;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
 }
 
-.message:empty {
+.message {
+  margin: 10px 0;
+  color: red;
   display: none;
 }
 
-.weather-container p {
-  margin: 5px 0;
+#loading {
+  color: blue;
 }
 
-.message.error {
-  color: #ff4d4d;
+.search-box input {
+  padding: 8px;
+  width: 70%;
+}
+
+.search-box button {
+  padding: 8px;
 }

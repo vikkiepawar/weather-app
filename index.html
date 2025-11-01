@@ -7,7 +7,20 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class="message"></div>
-<div class="weather-container"></div>
+  <div class="app-container">
+    <h1>🌦️ Weather App</h1>
+
+    <div id="loading" class="message">Loading...</div>
+    <div id="error-message" class="message"></div>
+
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name" />
+      <button id="searchBtn">Get Weather</button>
+    </div>
+
+    <div id="weather-info" class="weather-container"></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
