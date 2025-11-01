@@ -1,20 +1,18 @@
-#weather {
-  background-color: #eaf4fc;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
+.message {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #444;
+  margin-top: 10px;
 }
 
-#forecast {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
+.message:empty {
+  display: none;
 }
 
-.forecast-day {
-  background-color: #ffffff;
-  margin: 10px 0;
-  padding: 10px;
-  border-left: 4px solid #007bff;
-  border-radius: 6px;
+.weather-container p {
+  margin: 5px 0;
+}
+
+.message.error {
+  color: #ff4d4d;
 }
