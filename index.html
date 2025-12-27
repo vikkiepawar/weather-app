@@ -2,16 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Weather App</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Forecasting Web App</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-  <div class="app">
-    <h1>Weather App</h1>
-    <div id="weather">Loading weather data...</div>
-    <div id="forecast"></div>
-  </div>
-  <script src="script.js"></script>
+
+<button id="darkToggle">🌙</button>
+
+<div class="search-container glass">
+  <input id="cityInput" type="text" placeholder="Search city..." />
+  <button id="searchBtn">Search</button>
+</div>
+
+<div id="currentWeather" class="glass card"></div>
+
+<h2>Hourly Forecast</h2>
+<div id="hourly" class="scroll"></div>
+
+<h2>Weekly Forecast</h2>
+<div id="weekly" class="scroll"></div>
+
+<h2>Rainfall Probability</h2>
+<canvas id="rainChart"></canvas>
+
+<script src="script.js"></script>
 </body>
 </html>
